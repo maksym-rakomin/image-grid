@@ -1,0 +1,83 @@
+@import 'normalize'
+
+
+*
+    box-sizing: border-box
+
+html
+    height: 100%
+    font-size: 10px
+
+body 
+    min-height: 100%
+
+a 
+    text-decoration: none
+    color: #000
+
+
+
+main 
+    padding: 20px
+
+.title
+    font-size: 3.2rem
+    
+.grid__item
+    vertical-align: middle
+    display: inline-block
+    text-align: center
+// Не работает ссылка на родительский элемент "$"
+.grid__item:before
+    content: ''
+    display: inline-block
+    vertical-align: middle
+    height: 100%
+
+.grid__box
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 150px 165px 150px 185px 135px
+    grid-gap: 10px
+    grid-auto-flow: dense
+    font-size: 2rem
+
+.gcs-span6
+    grid-column-start: span 6
+
+.grs-span2
+    grid-row-start: span 2
+
+.gcs-span2
+    grid-column-start: span 2
+
+.gcs-span3
+    grid-column-start: span 3
+    
+.gcs-span4
+    grid-column-start: span 4
+
+.slateblue
+    background-color: #6652ad
+    
+.steelblue-second
+    background-color: #588cc7
+    
+.lightcoral
+    background-color: #fa688a
+    
+.sandybrown
+    background-color: #ffc569
+    
+.cornflowerblue
+    background-color: #8a95ef
+    
+.mediumaquamarine
+    background-color: #68c5b8
+    
+.silver
+    background-color: #afdfbf
+    
+
+
+
