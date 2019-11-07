@@ -332,12 +332,11 @@ main {
   vertical-align: middle;
   display: inline-block;
   text-align: center; }
-
-.grid__item:before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%; }
+  .grid__item:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; }
 
 .grid__box {
   display: grid;
